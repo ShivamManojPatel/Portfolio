@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Shivam Patel">
+    <title>Shivam Patel | Portfolio</title>
+
+    <link rel="icon" href="assets/imgs/title-logo.png" type="image/icon type">
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .personalInfo{
+            color: darkslategray;
+            /* transition: 0.3s; */
+        }
+
+        .personalInfo:hover{
+            color: #F85C70;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/shivamp2819/"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://twitter.com/ShivamPatel2819"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/___19shivam___"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/Shivam1928Patel"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h1 class="header-title">Shivam Patel</h1>
+                <h6 class="header-mono" >Developer | Graphic Designer</h6>
+                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i><a class="CV" href="assets/CV/Resume.pdf" attributes-list download >Download Resume</a></button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                </ul>
+                <a href="assets/imgs/avatar.jpg"><ul class="navbar-nav brand">
+                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Shivam Patel</h5>
+                        <div class="brand-subtitle">Developer | Graphic Designer</div>
+                    </li>
+                </ul></a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">A Developer/Graphic Designer Located On Our Lovely Earth</h5>
+                <p class="mt-20">I possess strong development skills in the field of development. Despite of programming skills, I have the knowledge of Graphic designing. I am a versatile learner, I have the prosperity to learn new technologies within a short time that would assets me as well as the company.</p>
+                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i><a class="Personal-link" href="assets/CV/Resume.pdf" attributes-list download >Download My CV</a></button>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">Summary</h5>
+                <p class="mt-20">As a
+                    <script>
+                        function calculateAge(birthDate){
+                            const today = new Date();
+                            const birthYear = birthDate.getFullYear();
+                            const birthMonth = birthDate.getMonth();
+                            const birthDay = birthDate.getDate();
+
+                            let age = today.getFullYear() - birthYear;
+
+                            if(today.getMonth() < birthMonth || (today.getMonth() === birthMonth && today.getDate() < birthDay)){
+                                age--;
+                            }
+
+                            return age;
+                        }
+
+                        const birthDate = new Date('2002-09-19');
+                        document.write(calculateAge(birthDate));
+                    </script>-year-old individual. I am dedicated to continuous learning & skill development. Striving to lead a fulfilling life, I pursue my passions, ensuring productivity and personal growth along the way.</p>
+                <ul class="mt40 info list-unstyled">
+                    <li class="personalInfo"><span>Birthdate</span><a> : 09-19-2002</a></script></li>
+                    <a href="mailto:patelshivammanoj@gmail.com" class="personalInfo"><li><span>Email</span> : patelshivammanoj@gmail.com</li></a>
+                    <a href="tel:+15597806361" class="personalInfo"><li><span>Phone</span> : +1 559 780 6361</li></a>
+                    <a class="personalInfo" href="https://www.google.com/maps/place/200+Hutton+St,+Jersey+City,+NJ+07307/@40.7465569,-74.0544715,17z/data=!3m1!4b1!4m6!3m5!1s0x89c257154704b57d:0x59814eef95dbc79e!8m2!3d40.7465569!4d-74.0544715!16s%2Fg%2F11c1f6l4qd?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D"><li><span>Address</span> :  200 Hutton street, Jersey city, NJ, US 07307</li></a>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/shivamp2819/"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://twitter.com/ShivamPatel2819"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/___19shivam___"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/Shivam1928Patel"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>  
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-desktop icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Development</h6>
+                        <p class="subtitle">Java, DSA, Asp.net, JavaScript basics, Php, HTML, CSS. C, C++, Python, MySql, Linux basics</p>
+                        <hr>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Development</h6>
+                        <p class="subtitle">HTML, CSS, JavaScript, Java, ASP.net, Php</p>
+                        <hr>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Graphic Designing</h6>
+                        <p class="subtitle">Photoshop, illustrator, Canva</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Education</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger"><a href="https://drive.google.com/file/d/1AjC-V8nL7IWBtw5hq4QIuFs0l1JDWHY0/view?usp=drive_link">Bachlor's of Science - Information Technology</a></h6>
+                            <P>2020 - 2023</P>
+                            <P><b>Uka Tarsadia University, Bardoli</b></P>
+                            <P class="subtitle"><ul>
+                                <li><b>Institute: </b>Babu Madhav Institute of Information Technology</li>
+                                <li>Completed successfully without any backlog</li>
+                                <li><b>CGPA: 8.18 | GPA: 3.44(According to WES)</b></li>
+                            </ul></P>
+
+                            <hr>
+
+                            <h6 class="title text-danger"><a href="https://drive.google.com/file/d/1Pw_J8CAzkhepAwoJ7LC--KCsUON5nAmU/view?usp=drive_link">Higher Secondary Certificate</a></h6>
+                            <P>2018 - 2020</P>
+                            <P><b>SBR Science school, Bardoli</b></P>
+                            <P class="subtitle"><ul>
+                                <li><b>Stream : </b>Science</li>
+                                <li><b>Board : </b>GSEB</li>
+                            </ul></P>
+
+                            <hr>
+
+                            <h6 class="title text-danger"><a href="https://drive.google.com/file/d/1Kp1T7p8NLMGp1V7vFJigUGdGrYd01N2i/view?usp=drive_link">Standard Secondary Certificate</a></h6>
+                            <P>2012 - 2018</P>
+                            <P><b>Parin and bomansa higher secondary school, Bardoli</b></P>
+                            <P class="subtitle"><ul>
+                                <li><b>Board : </b>GSEB</li>
+                            </ul></P>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Language known</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <ul>
+                                <li><h6><b>Gujarati</b>(Native Language)</h6></li>
+                                <!-- <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> -->
+                                <li><h6><b>English</b>(Proficiency in Speaking, Writing & Reading)</h6></li>
+                                <!-- <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> -->
+                                <li><h6><b>Hindi</b>(Proficiency in speaking & Reading)</h6></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Achivements</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <ul>
+                                <li><h6>Appointed as Vice General Secretary of Babu Madhav Institute of Information Technology, Uka Tarsadia University.</h6></li>
+                                <!-- <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> -->
+                                <li><h6>Managed Shark Tank Event as student coordinators at Uka Tarsadia University</h6></li>
+                                <!-- <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> -->
+                                <li><h6>Managed Shark Tank &amp; Diverse Events as faculty coordinators at Uka Tarsadia University</h6></li>
+                                <!-- <div class="progress mb-3"> -->
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <!-- </div> -->
+                                <li><h6>Got 2nd Price in Banner Making Competition.</h6></li>
+                                <!-- <div class="progress mb-3"> -->
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <!-- </div> -->
+                                <li><h6>Got 2nd & 1st in different singing competition.</h6></li>
+                                <!-- <div class="progress mb-3"> -->
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <!-- </div> -->
+                                <li><h6>Awarded with most influencing person of the department in college.</h6></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Projects</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="https://drive.google.com/drive/folders/1vB3mHcwbD4GxZd_4qxA8PhXWpSLN86O_?usp=drive_link"><h6 class="title text-danger">Event Management System</h6></a>
+                            <P><b>Technology: </b>Php, HTML, JS, CSS
+                                <br><b>Database: </b>MySql</P>
+                            <P class="subtitle">Developed intermediate website which provides all the services for various types of events. For the backend of this project, I used PHP technology.</P>
+                            <hr>
+                            <a href="https://drive.google.com/drive/folders/1NEH2Cn1pzmnsXEZiF9qgfK-MAq8NBFaP?usp=drive_link"><h6 class="title text-danger">Event Management System</h6></a>
+                            <P><b>Technology: </b>Java, HTML, JS, CSS
+                                <br><b>Database: </b>MySql</P>
+                            <P class="subtitle">This is the advance version of the same system I created in PHP technology. I added more features in admin panel. For the backend of this project, I have used Java and Servlet technology.</P>
+                            <hr>
+                            <a href="https://drive.google.com/drive/folders/1tV671wvFBxJKyAdVYwX4EhuZQdbXafZB?usp=drive_link"><h6 class="title text-danger">Real Estate System</h6></a>
+                            <P><b>Technology: </b>Java, HTML, JS, CSS
+                                <br><b>Database: </b>MySql</P>
+                            <P class="subtitle">Developed this small scoped website which can be used for real estate purpose for college project. Java technology was used in backend.</P>
+                            <hr>
+                            <a href="https://drive.google.com/drive/folders/1OIiMaaGgAzzRJEob8YNSGxBo2EWEim5t?usp=drive_link"><h6 class="title text-danger">Real Estate System</h6></a>
+                            <P><b>Technology: </b>.NET, HTML, JS, CSS
+                                <br><b>Database: </b>MySql</P>
+                            <P class="subtitle">Added some features and used different technology in the same system. .Net technology was used in backend.</P>
+                            <hr>
+                            <a href="https://drive.google.com/drive/folders/1BSHzW4sIZJE8vuH4ol9ZDO_FdIyviqDy?usp=drive_link"><h6 class="title text-danger">Cafe Management System</h6></a>
+                            <P><b>Technology: </b>Java, Android
+                                <br><b>Database: </b>SQLite</P>
+                            <P class="subtitle">Developed this small scaled android application. Using this application we can order food and drinks online. Backend was developed using java.</P>
+                            <hr>
+                            <a href="https://drive.google.com/drive/folders/1HD8BkrbVr-y60TcOsgnoli5mr_vhl4KG?usp=sharing"><h6 class="title text-danger">Data Structures & Algorithm</h6></a>
+                            <P><b>Technology: </b>c++
+                            <P class="subtitle">Solved more than 100 different type of complex DSA Algorithms like Array, Stack, Queue, Linked List, Tree & many more.</P>
+                            <hr>
+                            <a href="https://drive.google.com/drive/folders/1VIXjEm_rMyBJ5nye_uG0qKAZJ11fd2Ro?usp=sharing"><h6 class="title text-danger">Graphic Designing Projects</h6></a>
+                            <P><b>Technology: </b>Photoshop, illustrator, Canva</P>
+                            <P class="subtitle">Crafted around 250 different banner, posters and logo for different types of events like Navratri, Diwali, Placement and many more.</P>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Hobbies</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <ul>
+                                <li><h6><b>Photography</b>(<a href="https://drive.google.com/drive/folders/1bNDEPQuB2CYT5UpvDvNN6Z9aqVF1KlFv?usp=sharing" class="personalInfo">Click here to view</a>)</h6></li>
+                                <!-- <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> -->
+                                <li><h6><b>Singing</b></h6></li>
+                                <!-- <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Work Exprience</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            	<a href="https://drive.google.com/file/d/1KpHNP-3Le-VUc1y4X28eP7mK5OC02O4D/view?usp=sharing"><h6 class="title text-danger">Lab Assistant &amp; Graphic Designer</h6></a>
+                                <P class="subtitle">June 2023 - April 2024</P>
+                            	<P><b>Uka Tarsadia University, Bardoli</b></P>
+                                <P class="subtitle"><ul>
+                                    <li>Joined here as Lab Assistant.</li>
+                                    <li>Here I attend Laboratory sessions of different subject, Solve students doubt in any subject.</li>
+                                    <li>Other than that I teached subjects like practical’s of Operating Systems(Linux) and Multimedia Design.</li>
+                                    <li>About Graphic designing here I make posters, banners & flyers for University. For Instance, Placement banner, Navratri banners, Instagram posts & many more.</li>
+                                </ul></P>
+                           	    <hr>
+				                <a href="https://drive.google.com/file/d/1Fopzr9MBjM8Ti2dFOdVeZ9A1-_2QkRJa/view?usp=drive_link"><h6 class="title text-danger">IELTS Tutor</h6></a>
+                                <P class="subtitle">September 2023 - March 2024</P>
+                            	<P><b>First Achiver Consultant, Bardoli</b></P>
+                                <P class="subtitle"><ul>
+                                    <li>Joined here as IELTS student. But, recruited after sometime.</li>
+                                    <li>Here I worked as a IELTS tutor.</li>
+                                    <li>I teach and train for all module exams.</li>
+                                </ul></P>
+                                <hr>
+                                <a href="https://drive.google.com/file/d/1IZvbp91MCALvZp_5EUygkxPX4_74n-lU/view?usp=drive_link"><h6 class="title text-danger">Freelance Graphic Designer</h6></a>
+                                <P class="subtitle">May 2024 - December 2024</P>
+                            	<P><b>BeMotion, Surat</b></P>
+                                <P class="subtitle"><ul>
+                                    <li>BeMotion is a company which handles social media and make strategies to improve their client’s social media.</li>
+                                    <li>I make banners and social media posts for their client’s.</li>
+                                </ul></P>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Skills</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <ul>
+                                <li><h6>Code Structure &amp; Architecture</h6></li>
+                                <!-- <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> -->
+                                <li><h6>Logical Thinking</h6></li>
+                                <!-- <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div> -->
+                                <li><h6>Team Work</h6></li>
+                                <!-- <div class="progress mb-3"> -->
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <!-- </div> -->
+                                <li><h6>Passionate to learn</h6></li>
+                                <!-- <div class="progress mb-3"> -->
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <!-- </div> -->
+                                <li><h6>Problem solving</h6></li>
+                                <!-- <div class="progress mb-3"> -->
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <!-- </div> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">References</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            	<h6 class="title text-danger"><a href="https://utu.ac.in/bmiit/#/staff">Dr. Sapan Naik </a><a href="https://drive.google.com/file/d/1KFMQkpJkoApHrzd2O0M95pnX6RmrmxnY/view?usp=drive_link" class="personalInfo" style="font-size: 12px;">(L.O.R)</a></h6>
+                            	<P>Assistant Professor</P>
+                                <P><b>Uka Tarsadia University, Bardoli</b></P>
+				                <p><ul>
+                                    <li><b>Contact no: </b><a href="tel:+919586113399" class="personalInfo">+91 95861 13399</a></li>
+                                    <li><b>Email: </b><a href="mailto:sapan.naik@utu.ac.in" class="personalInfo">sapan.naik@utu.ac.in</a></li>
+                                </ul></p>
+                           	    <hr>
+				                <h6 class="title text-danger"><a href="https://utu.ac.in/bmiit/#/staff">Mr. Rakesh Savant </a><a href="https://drive.google.com/file/d/1z6Mw2s3m9LgalRjLYRYnxHT8VJxSj0cT/view?usp=drive_link" class="personalInfo" style="font-size: 12px;">(L.O.R)</a></h6>
+                            	<P>Assistant Professor</P>
+                                <P><b>Uka Tarsadia University, Bardoli</b></P>
+				                <p><ul>
+                                    <li><b>Contact no: </b><a href="tel:+919913730497" class="personalInfo">+91 99137 30497</a></li>
+                                    <li><b>Email: </b><a href="mailto:rakesh.savant@utu.ac.in" class="personalInfo">rakesh.savant@utu.ac.in</a></li>
+                                </ul></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section contact" id="contact">
+        <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Send a message</h4>
+                        <form method="post" action="https://script.google.com/macros/s/AKfycbx11a2s41dWifeLi8kPJ-JhfqI4YaQL5cLgiPB5cjAl5fyvf2uDeCCkbm_34aL66COcdQ/exec">
+                            <div class="form-group">
+                                <input  class="form-control" type="text" placeholder="Name *" required name="Name" id="Name">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Email *" required name="Email" id="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Message *" rows="7" required name="Message" id="Message"></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <button type="submit" class="form-control btn btn-primary" name="Button" id="Button">Send Message</button>
+                            </div>
+                        </form>
+                        <script>
+                            let form = document.querySelector("form");
+                            form.addEventListener('submit', (e)=>{
+                                e.preventDefault();
+                                let data = new FormData(form);
+                                fetch('https://script.google.com/macros/s/AKfycbx11a2s41dWifeLi8kPJ-JhfqI4YaQL5cLgiPB5cjAl5fyvf2uDeCCkbm_34aL66COcdQ/exec', {
+                                    method:"POST",
+                                    body:data
+                                })
+                                .then(res => res.text())
+                                .then(data => {
+                                    document.querySelector('#Button').innerHTML = 'Submitted, Shivam Patel will reach you shortly. Thank you for approaching!!';
+                                    document.querySelector('#Button').disabled = true;
+                                });
+                            })
+                        </script>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Phone : <br> <a href="tel:+15597806361" class="personalInfo"><span>+1 559 780 6361</span></a></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br><a href="https://www.google.com/maps/place/200+Hutton+St,+Jersey+City,+NJ+07307/@40.7465569,-74.0544715,17z/data=!3m1!4b1!4m6!3m5!1s0x89c257154704b57d:0x59814eef95dbc79e!8m2!3d40.7465569!4d-74.0544715!16s%2Fg%2F11c1f6l4qd?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" class="personalInfo"><span class="">200 Hutton Street, Jersey City, NJ, US 07307</span></a></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <a href="mailto:patelshivammanoj@gmail.com" class="personalInfo"><span class="">patelshivammanoj@gmail.com</span></a></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.facebook.com/shivamp2819/"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://twitter.com/ShivamPatel2819"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/___19shivam___"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/Shivam1928Patel"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> All copyrights reserved to <span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Shivam Patel</span></a> 
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
