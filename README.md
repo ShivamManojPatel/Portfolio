@@ -51,7 +51,7 @@ Integrations
 -------------------------------------
 Developer
 -------------------------------------
-Shivam Patel
+Shivam Patel * 
 Computer Science Grad Student | Developer | Designer
- | Linkedin: https://www.linkedin.com/in/shivampatel19/
+ * LinkedIn: https://www.linkedin.com/in/shivampatel19/
 
