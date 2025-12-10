@@ -53,5 +53,5 @@ Developer
 -------------------------------------
 Shivam Patel
 Computer Science Grad Student | Developer | Designer
-Linkedin: https://www.linkedin.com/in/shivampatel19/
+ | Linkedin: https://www.linkedin.com/in/shivampatel19/
 
