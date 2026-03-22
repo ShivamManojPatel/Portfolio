@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <title>Shivam Patel — Software Engineer</title>
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="Shivam Patel — Software Engineer" />
+<meta name="description" content="Full Stack Developer and CS Grad Student at University of Central Arkansas. Building web applications with Python, React, FastAPI and more." />
+<meta name="keywords" content="Shivam Patel, Software Engineer, Full Stack Developer, Python, React, FastAPI, CS Student" />
+<meta name="author" content="Shivam Patel" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph — looks good when shared on LinkedIn, WhatsApp, Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://shivammanojpatel.github.io/portfolio" />
+<meta property="og:title" content="Shivam Patel — Software Engineer" />
+<meta property="og:description" content="Full Stack Developer and CS Grad Student at University of Central Arkansas. Building web applications with Python, React, FastAPI and more." />
+
+<!-- Twitter Card — looks good when shared on Twitter/X -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="https://shivammanojpatel.github.io/portfolio" />
+<meta name="twitter:title" content="Shivam Patel — Software Engineer" />
+<meta name="twitter:description" content="Full Stack Developer and CS Grad Student at University of Central Arkansas. Building web applications with Python, React, FastAPI and more." />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"></script>
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-circle-wrap">
+      <svg class="loader-svg" viewBox="0 0 120 120">
+        <defs>
+    <linearGradient id="loaderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+  </defs>
+        <circle class="loader-track" cx="60" cy="60" r="54"/>
+        <circle class="loader-progress" cx="60" cy="60" r="54"/>
+      </svg>
+      <div class="loader-logo">SP</div>
+    </div>
+    <div class="loader-text">Loading...</div>
+  </div>
+</div>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- NOISE OVERLAY -->
+  <div id="noise"></div>
+
+  <!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-left">
+      <span class="nav-logo">SP</span>
+      <span class="nav-status">
+        <span class="status-dot"></span>
+        Open to work
+      </span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+  <button id="theme-toggle">Dark</button>
+  <a href="https://github.com/ShivamManojPatel" target="_blank" class="nav-cta">GitHub ↗</a>
+  <a href="Shivam_Patel_Resume.pdf" download class="nav-resume">Resume ↓</a>
+  <button id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+  <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+  <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+  <a href="#leadership" onclick="closeMobileMenu()">Leadership</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  <a href="Resume.pdf" download>Resume ↓</a>
+</div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div id="particles"></div>
+    <div class="hero-inner">
+      <div class="hero-meta">
+        <span class="hero-tag">Based in Little Rock, AR</span>
+        <span class="hero-divider">·</span>
+        <span class="hero-tag">CS Grad Student @ UCA</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line">Shivam</span>
+        <span class="name-line accent">Patel</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">—</span>
+        <span id="typed-text"></span>
+      </div>
+      <p class="hero-desc">
+        I build full-stack web applications and love turning complex problems into clean, simple solutions. Code. Coffee. Repeat.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary magnetic">View Projects</a>
+        <a href="#contact" class="btn-ghost magnetic">Get in touch ↗</a>
+      </div>
+      <div class="hero-scroll">
+        <span class="scroll-text">scroll to explore</span>
+        <div class="scroll-bar"></div>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-val" data-count="9">0</span>
+          <span class="stat-key">Projects</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-val" data-count="5">0</span>
+          <span class="stat-key">Years coding</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-val" data-count="10">0</span>
+          <span class="stat-key">Technologies</span>
+        </div>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/ShivamManojPatel" target="_blank" class="hero-link">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/shivampatel19/" target="_blank" class="hero-link">LinkedIn ↗</a>
+        <a href="mailto:work.shivamptl@gmail.com" class="hero-link">Email ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">001 — About</div>
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="section-title">A developer who actually reads documentation.</h2>
+      </div>
+      <div class="about-right">
+        <p class="about-text">Originally from Gujarat, India, I'm currently pursuing my Master's in Computer Science at the University of Central Arkansas. I got into CS because I love the idea that you can build anything with just a keyboard — and I've been chasing that feeling ever since.</p>
+        <p class="about-text">When I'm not writing code I'm probably debugging the same line for three hours and calling it learning.</p>
+        <div class="about-tags">
+          <span class="about-tag">Full Stack Dev</span>
+          <span class="about-tag">CS Grad Student</span>
+          <span class="about-tag">Open Source</span>
+          <span class="about-tag">Problem Solver</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label">002 — Skills</div>
+    <h2 class="section-title">What I work with</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">Python</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-level">Beginner</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">React</span>
+          <span class="skill-level">Beginner</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="35"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">PHP</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">Java</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">MySQL</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">FastAPI</span>
+          <span class="skill-level">Beginner</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="35"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">HTML & CSS</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">Linux</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">Git</span>
+          <span class="skill-level">Beginner</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="35"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">003 — Projects</div>
+    <h2 class="section-title">Things I have built</h2>
+    <div class="projects-list">
+
+      <div class="project-row">
+        <div class="project-num">01</div>
+        <div class="project-info">
+          <h3 class="project-name">AI Resume Analyzer</h3>
+          <p class="project-desc">AI-powered web app that analyzes resumes against job descriptions. Returns match score, skill gaps, suggestions and project recommendations.</p>
+          <div class="project-stack">
+            <span>Python</span><span>FastAPI</span><span>React</span><span>Groq AI</span>
+          </div>
+        </div>
+        <a href="https://github.com/ShivamManojPatel/resume-analyzer" target="_blank" class="project-arrow">↗</a>
+      </div>
+
+      <div class="project-row">
+        <div class="project-num">02</div>
+        <div class="project-info">
+          <h3 class="project-name">Car Rental System</h3>
+          <p class="project-desc">Full-stack car rental web application with user registration, vehicle listings, reservations and Stripe-based payments.</p>
+          <div class="project-stack">
+            <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Stripe</span>
+          </div>
+        </div>
+        <a href="https://github.com/ShivamManojPatel" target="_blank" class="project-arrow">↗</a>
+      </div>
+
+      <div class="project-row">
+        <div class="project-num">03</div>
+        <div class="project-info">
+          <h3 class="project-name">Event Management System</h3>
+          <p class="project-desc">Web platform for managing events like weddings, parties and conferences with admin-controlled UI customization.</p>
+          <div class="project-stack">
+            <span>Java</span><span>MySQL</span><span>jQuery</span><span>HTML/CSS</span>
+          </div>
+        </div>
+        <a href="https://github.com/ShivamManojPatel" target="_blank" class="project-arrow">↗</a>
+      </div>
+
+      <div class="project-row">
+        <div class="project-num">04</div>
+        <div class="project-info">
+          <h3 class="project-name">Cafe Online Ordering System</h3>
+          <p class="project-desc">Android mobile application for online cafe ordering with menu browsing, cart management and order tracking.</p>
+          <div class="project-stack">
+            <span>Android</span><span>Java</span><span>Firebase</span>
+          </div>
+        </div>
+        <a href="https://github.com/ShivamManojPatel" target="_blank" class="project-arrow">↗</a>
+      </div>
+
+      <div class="project-row">
+        <div class="project-num">05</div>
+        <div class="project-info">
+          <h3 class="project-name">Real Estate Platform</h3>
+          <p class="project-desc">Academic real estate management system with property listings, search filters and booking system.</p>
+          <div class="project-stack">
+            <span>Java</span><span>MySQL</span><span>HTML/CSS</span>
+          </div>
+        </div>
+        <a href="https://github.com/ShivamManojPatel" target="_blank" class="project-arrow">↗</a>
+      </div>
+
+      <div class="project-row">
+        <div class="project-num">06</div>
+        <div class="project-info">
+          <h3 class="project-name">Salt & Pepper Noise Detection</h3>
+          <p class="project-desc">Image processing project that detects and removes salt and pepper noise from images using Python and OpenCV.</p>
+          <div class="project-stack">
+            <span>Python</span><span>OpenCV</span><span>NumPy</span>
+          </div>
+        </div>
+        <a href="https://github.com/ShivamManojPatel" target="_blank" class="project-arrow">↗</a>
+      </div>
+
+      <div class="project-row">
+        <div class="project-num">07</div>
+        <div class="project-info">
+          <h3 class="project-name">Titanic Survival Prediction</h3>
+          <p class="project-desc">Machine learning model that predicts Titanic passenger survival using classification algorithms and data analysis.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+          </div>
+        </div>
+        <a href="https://github.com/ShivamManojPatel" target="_blank" class="project-arrow">↗</a>
+      </div>
+
+      <div class="project-row">
+        <div class="project-num">08</div>
+        <div class="project-info">
+          <h3 class="project-name">ETL Pipeline</h3>
+          <p class="project-desc">Automated Extract Transform Load pipeline built with Shell scripting for data processing workflows.</p>
+          <div class="project-stack">
+            <span>Shell Script</span><span>Linux</span><span>Bash</span>
+          </div>
+        </div>
+        <a href="https://github.com/ShivamManojPatel" target="_blank" class="project-arrow">↗</a>
+      </div>
+
+      <div class="project-row">
+        <div class="project-num">09</div>
+        <div class="project-info">
+          <h3 class="project-name">GPU & HPC Research Paper</h3>
+          <p class="project-desc">Authored research paper on GPU technologies and their role in modern high-performance computing systems.</p>
+          <div class="project-stack">
+            <span>Research</span><span>GPU</span><span>HPC</span>
+          </div>
+        </div>
+        <a href="https://github.com/ShivamManojPatel" target="_blank" class="project-arrow">↗</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label">004 — Experience</div>
+    <h2 class="section-title">Where I have worked</h2>
+    <div class="exp-list">
+
+      <div class="exp-row">
+        <div class="exp-date">Jan 2024 — Dec 2024</div>
+        <div class="exp-info">
+          <h3 class="exp-title">Operations Lead</h3>
+          <p class="exp-company">BeMotion Advertising · Gujarat, India</p>
+          <p class="exp-desc">Co-founded and managed operations for a startup delivering digital solutions and client-facing campaigns. Coordinated with developers and designers to translate business requirements into technical deliverables.</p>
+        </div>
+        <span class="exp-badge">Startup</span>
+      </div>
+
+      <div class="exp-row">
+        <div class="exp-date">Jun 2023 — Apr 2024</div>
+        <div class="exp-info">
+          <h3 class="exp-title">Lab Assistant</h3>
+          <p class="exp-company">Uka Tarsadia University · Gujarat, India</p>
+          <p class="exp-desc">Assisted undergraduate students in Linux-based Operating Systems labs by troubleshooting system issues and guiding practical coursework.</p>
+        </div>
+        <span class="exp-badge">Education</span>
+      </div>
+
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section-label" style="margin-top: 80px;">005 — Education</div>
+    <h2 class="section-title">Academic journey</h2>
+    <div class="exp-list">
+
+      <div class="exp-row">
+        <div class="exp-date">2025 — 2027</div>
+        <div class="exp-info">
+          <h3 class="exp-title">MS Computer Science</h3>
+          <p class="exp-company">University of Central Arkansas · USA</p>
+          <p class="exp-desc">GPA: 3.0/4.0 · Expected May 2027</p>
+        </div>
+        <span class="exp-badge">Current</span>
+      </div>
+
+      <div class="exp-row">
+        <div class="exp-date">Spring 2025</div>
+        <div class="exp-info">
+          <h3 class="exp-title">Computer Science</h3>
+          <p class="exp-company">Pace University · New York, USA</p>
+          <p class="exp-desc">Seidenberg School of Computer Science and Information Systems</p>
+        </div>
+        <span class="exp-badge">Completed</span>
+      </div>
+
+      <div class="exp-row">
+        <div class="exp-date">2020 — 2023</div>
+        <div class="exp-info">
+          <h3 class="exp-title">BSc Information Technology</h3>
+          <p class="exp-company">Uka Tarsadia University · Gujarat, India</p>
+          <p class="exp-desc">CGPA: 8.18/10 · Most Influencing Person in Department 2023</p>
+        </div>
+        <span class="exp-badge">Completed</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LEADERSHIP & AWARDS -->
+  <section id="leadership">
+    <div class="section-label">006 — Leadership & Awards</div>
+    <h2 class="section-title">Beyond the code</h2>
+    <div class="exp-list">
+
+      <div class="exp-row">
+        <div class="exp-date">Aug 2022 — Jul 2023</div>
+        <div class="exp-info">
+          <h3 class="exp-title">Vice General Secretary</h3>
+          <p class="exp-company">Student Union · Babu Madhav Institute of IT, UTU</p>
+          <p class="exp-desc">Represented the student body and coordinated academic and cultural initiatives with faculty and student committees.</p>
+        </div>
+        <span class="exp-badge">Leadership</span>
+      </div>
+
+      <div class="exp-row">
+        <div class="exp-date">April 2023</div>
+        <div class="exp-info">
+          <h3 class="exp-title">Most Influencing Person in Department</h3>
+          <p class="exp-company">Babu Madhav Institute of IT, UTU · Gujarat, India</p>
+          <p class="exp-desc">Awarded by the department for outstanding contributions to academic and cultural life at the university.</p>
+        </div>
+        <span class="exp-badge">Award 🏆</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">007 — Contact</div>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h2 class="section-title">Let's build something together.</h2>
+        <p class="contact-sub">Currently open to Software Engineering opportunities. Whether you have a project, a question, or just want to say hi — reach out.</p>
+        <div class="contact-items">
+          <a href="mailto:work.shivamptl@gmail.com" class="contact-link">work.shivamptl@gmail.com ↗</a>
+          <a href="https://www.linkedin.com/in/shivampatel19/" target="_blank" class="contact-link">linkedin.com/in/shivampatel19 ↗</a>
+          <a href="https://github.com/ShivamManojPatel" target="_blank" class="contact-link">github.com/ShivamManojPatel ↗</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Name" class="form-input" required />
+        <input type="email" placeholder="Email" class="form-input" required />
+        <textarea placeholder="Message" class="form-textarea" rows="5" required></textarea>
+        <button type="submit" class="btn-primary magnetic">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">SP</span>
+    <span class="footer-copy">Designed & built by Shivam Patel · 2026</span>
+    <span class="footer-tag">Code. Coffee. Repeat.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
