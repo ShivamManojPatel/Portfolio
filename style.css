@@ -1040,7 +1040,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 28px;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .loader-name-wrap {
@@ -1048,19 +1050,22 @@ footer {
   align-items: center;
   justify-content: center;
   height: 80px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .l-s, .l-p {
-  font-size: clamp(1.8rem, 6vw, 3.8rem);
+  font-size: clamp(1.6rem, 8vw, 3.8rem);
   font-weight: 900;
   font-family: var(--mono);
   color: var(--primary);
   display: inline-block;
+  flex-shrink: 0;
   transition: all 0.9s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .l-hivam, .l-atel {
-  font-size: clamp(1.8rem, 6vw, 3.8rem);
+  font-size: clamp(1.6rem, 8vw, 3.8rem);
   font-weight: 900;
   font-family: var(--mono);
   color: var(--primary);
@@ -1069,17 +1074,19 @@ footer {
   opacity: 0;
   white-space: nowrap;
   display: inline-block;
+  flex-shrink: 0;
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .l-space {
   width: 0;
   display: inline-block;
+  flex-shrink: 0;
   transition: width 0.8s ease;
 }
 
 .loader-progress-wrap {
-  width: 180px;
+  width: min(180px, 60vw);
   height: 1px;
   background: rgba(168,85,247,0.15);
   position: relative;
@@ -1122,6 +1129,7 @@ footer {
   letter-spacing: 0.15em;
   transition: color 0.4s;
 }
+
 /* ═══════════════════════════════════
    SCROLL PROGRESS BAR
 ═══════════════════════════════════ */
@@ -1229,5 +1237,3 @@ footer {
   .nav-cta { display: none; }
   .nav-resume { display: none; }
 }
-
-.loader-progress-wrap { width: 140px; }
