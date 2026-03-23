@@ -1028,11 +1028,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1), visibility 0.9s ease;
 }
 
 #loader.hidden {
-  opacity: 0;
+  transform: translateY(-100%)
   visibility: hidden;
 }
 
