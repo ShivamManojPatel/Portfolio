@@ -1237,3 +1237,13 @@ footer {
   .nav-cta { display: none; }
   .nav-resume { display: none; }
 }
+
+/* Hide scrollbar */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
