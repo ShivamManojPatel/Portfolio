@@ -1051,7 +1051,7 @@ footer {
 }
 
 .l-s, .l-p {
-  font-size: 3.8rem;
+  font-size: clamp(1.8rem, 6vw, 3.8rem);
   font-weight: 900;
   font-family: var(--mono);
   color: var(--primary);
@@ -1060,7 +1060,7 @@ footer {
 }
 
 .l-hivam, .l-atel {
-  font-size: 3.8rem;
+  font-size: clamp(1.8rem, 6vw, 3.8rem);
   font-weight: 900;
   font-family: var(--mono);
   color: var(--primary);
@@ -1229,3 +1229,5 @@ footer {
   .nav-cta { display: none; }
   .nav-resume { display: none; }
 }
+
+.loader-progress-wrap { width: 140px; }
