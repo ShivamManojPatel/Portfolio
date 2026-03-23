@@ -342,18 +342,65 @@ document.querySelectorAll(".exp-row").forEach(row => {
 
 
 // ═══════════════════════════════════
-// LOADING SCREEN
+// LOADER — SP Split Reveal
 // ═══════════════════════════════════
+document.body.style.overflow = "hidden";
+
+const lS = document.getElementById("lS");
+const lP = document.getElementById("lP");
+const lHivam = document.getElementById("lHivam");
+const lAtel = document.getElementById("lAtel");
+const lSpace = document.getElementById("lSpace");
+const loaderFill = document.getElementById("loaderFill");
+const loaderPct = document.getElementById("loaderPct");
+const loaderStatus = document.getElementById("loaderStatus");
+
+// Progress line
+let pct = 0;
+const pctInterval = setInterval(() => {
+    pct = Math.min(pct + 1.2, 100);
+    loaderFill.style.width = pct + "%";
+    loaderPct.textContent = Math.floor(pct) + "%";
+    if(pct >= 100) clearInterval(pctInterval);
+}, 30);
+
+// Status updates
+setTimeout(() => { loaderStatus.textContent = "// loading assets"; }, 600);
+setTimeout(() => { loaderStatus.textContent = "// building ui"; }, 1300);
+setTimeout(() => { loaderStatus.textContent = "// almost ready"; }, 2000);
+
+// Step 1 — SP pulse
+setTimeout(() => {
+    lS.style.transform = "scale(1.15)";
+    lP.style.transform = "scale(1.15)";
+}, 1900);
+
+// Step 2 — Split apart
+setTimeout(() => {
+    lS.style.transform = "translateX(-6px) scale(1)";
+    lP.style.transform = "translateX(6px) scale(1)";
+}, 2200);
+
+// Step 3 — Expand to full name
+setTimeout(() => {
+    lHivam.style.maxWidth = "220px";
+    lHivam.style.opacity = "1";
+    lAtel.style.maxWidth = "220px";
+    lAtel.style.opacity = "1";
+    lSpace.style.width = "18px";
+    lS.style.transform = "translateX(0)";
+    lP.style.transform = "translateX(0)";
+    loaderStatus.textContent = "// ready";
+}, 2500);
+
+// Step 4 — Hide loader
 window.addEventListener("load", () => {
-    const loader = document.getElementById("loader");
     setTimeout(() => {
+        const loader = document.getElementById("loader");
         loader.classList.add("hidden");
         document.body.style.overflow = "auto";
-    }, 2200);
+    }, 3200);
 });
-
-// Hide scroll while loading
-document.body.style.overflow = "hidden";
 
 // ═══════════════════════════════════
 // SCROLL PROGRESS BAR
